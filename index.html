@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>API</title>
+</head>
+
+<body>
+    <header>
+        <h1>La Météo</h1>
+    </header>
+    <main>
+        <section id="sect1">
+            <form action="">
+                <input type="text" placeholder="Saisissez une ville" id="text" name="recherche">
+                <input type="submit" value="Recherche" id="recherche">
+            </form>
+        </section>
+        <section id="sect2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Sun-soleil2.svg/220px-Sun-soleil2.svg.png" alt="soleil">
+            <div>
+                <p>A Lorem</p>
+                <p id="time">Date</p>
+                <p id="temp">Temperature</p>
+                <p id="humidity">Humidité</p>
+                <p id="Precipite">Précipitation</p>
+            </div>
+        </section>
+        <section id="sect3">
+            <button>Afficher la météo de la journée</button>
+            <div class="containerMeteo"></div>
+        </section>
+    </main>
+</body>
+
+</html> 

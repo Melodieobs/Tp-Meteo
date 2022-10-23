@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+header{
+    max-width: 1500px;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(32, 32, 78);
+    font-weight: 700;
+}
+h1{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    color: #FFFFFF;
+}
+body{
+    margin: 1rem;
+    background-color: rgb(54 76 136);
+}
+main{
+    max-width: 1500px;
+}
+main section{
+    max-width: 1000px;
+    margin: auto;
+
+}
+section{
+    background-color: rgb(95 124 202);
+    border-radius: 20px;
+}
+#sect1 form{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: -3px 7px 13px 0 rgba(14, 29, 80, 0.219);
+}
+#sect1 #recherche{
+    border: none;
+    padding: 1rem;
+    background-color: rgb(37, 37, 92);
+    color: #FFFFFF;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+#sect1 #text{
+    border: none;
+    padding-left: 2rem ;
+    padding-right: 4rem;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#sect2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.75rem 0;
+}
+#sect2 img{
+    width: 30%;
+    object-fit: contain;
+}
+#sect2 p {
+    padding: 0.65rem;
+    padding-left: 3rem;
+}
+#sect3{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -3px 7px 13px 0 rgba(14, 29, 80, 0.219);
+}
+button{
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1rem;
+    background-color:rgb(37, 37, 92);
+    color: #FFFFFF;
+}
+.containerMeteo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerMeteo div{
+    padding: 0.75rem;
+    margin: 2rem 0;
+    max-width: 150px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.containerMeteo div img{
+    width: 40%;
+    padding-bottom: 1.5rem;
+}
+
+.containerMeteo div p{
+    padding: 0.3rem;
+}
+
+@media screen and (max-width: 475px) {
+    p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #sect1 #recherche{
+        font-size: 0.7rem;
+    }
+    #sect1 #text{
+        padding-right: 0.2rem;
+        font-size: 0.75rem;
+        padding-left: 0.5rem;
+    }
+    #sect2{
+        flex-direction: column;
+    }
+    #sect2 p{
+        text-align: center;
+        padding-left: 0;
+    }
+    #sect2 img{
+        padding:2rem 0;
+    }
+    .containerMeteo{
+        flex-wrap: initial;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerMeteo div img{
+        width: 80%;
+    }
+    .containerMeteo div{
+        margin-bottom: 1.2rem;
+    }
+}
